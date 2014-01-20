@@ -1,0 +1,226 @@
+/********************************************/
+/* General */
+/********************************************/
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 10px;
+	color: rgba(100,100,100, 1);
+	background: rgba(245, 245, 245, 1);
+	transition: color 0.1s ease-in-out, background 0.3s ease-in-out;
+}
+
+
+.main {
+	position: relative;
+	min-width: 320px;
+}
+
+
+.wrapper {	
+	max-width: 520px;
+	margin: 0 auto;
+	top: 130px;
+	position: relative;
+	padding: 0 10px; 	
+}
+
+a {
+	color: rgba(0,190,235,1);
+	padding: 1px;
+	border-radius: 2px;
+	background: transparent;	
+}
+
+a:hover {
+	background-color: rgba(0,190,235,1);
+	color: rgba(255,255,255,1);
+}
+/********************************************/
+/* mainHeader */
+/********************************************/
+.mainHeader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 15px 10px;
+	background-color: rgba(255,255,255, 0.95);
+	box-shadow: 0px 1px 2px rgba(0,0,0, 0.15);
+	min-width: 320px;
+	z-index: 10;
+	text-align: center;
+
+}
+
+h1 {
+	font-size: 2.4em;
+	color: rgba(80,80,80, 1);
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+	color: rgba(80,80,80, 1);
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	padding: 7px;
+	font-size: 1.2em;
+	color: rgba(0,190,235,1);
+	border-radius: 2px;
+	background: transparent;	
+	margin-right: 3px;
+	transition: color 0.1s ease-in-out, background 0.3s ease-in-out;
+}
+
+nav a:last-child {margin-right: 0;}
+
+nav a:hover {
+	background-color: rgba(0,190,235,1);
+	color: rgba(255,255,255,1);
+}
+
+nav a.active {
+	background-color: rgba(0,190,235,1);
+	color: rgba(255,255,255,1);
+}
+
+h3 {
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+h4 {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin-bottom: 30px;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+/********************************************/
+/* content */
+/********************************************/
+/* about */
+.content {margin-bottom: 60px;}
+
+p {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+.about img { 
+	width: 140px;
+	height: 140px;
+	margin-bottom: 15px;
+	border-radius: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about p:last-child {
+	margin-bottom: 0;
+}
+
+/* contact */
+.contact {text-align: center;}
+
+.field {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	text-align:left;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	}
+
+input.text,
+textarea {
+	border: solid 1px rgba(80,80,80, 1);
+	padding: 7px 10px;
+	font-size: 1em;
+	width: 100%;
+	border-radius: 2px;
+	background: rgba(252,252,252,1);
+
+}
+
+input.text:hover,
+textarea:hover {
+	background: rgba(255,255,255,1);
+	border: solid 1px rgba(50,50,50, 1);
+}
+
+input.text:focus,
+textarea:focus {
+	background: rgba(255,255,255,1);
+	border: solid 1px rgba(20,20,20, 1);
+	box-shadow: 0 1px 1px rgba(20,20,20, 0.2);
+}
+
+input.text.placeholder,
+textarea.placeholder {
+    color: rgba(50,50,50,1);
+    text-transform: uppercase;
+ 	font-family: 'Arimo', sans-serif;
+	font-size: 1.2em;
+}
+
+textarea {height: 90px;}
+
+input.submit {
+	width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+	background: rgba(0,190,235,1);
+	font-size: 1.4em;
+	border-radius: 3px;
+	border: none;
+}
+
+input.submit:hover {
+	box-shadow: 0 1px 0 rgba(60,140,185,1);
+	border: solid 1px rgba(60,140,185,1);
+	padding: 9px;
+}
+
+input.submit:active {
+	border: solid 1px rgba(60,140,185,1);
+	box-shadow: none;
+	margin-top: -1px;
+	padding: 9px;
+}
+
+/* footer */
+footer p {
+	font-size: 1.2em;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+/********************************************/
+/* Everybody has Media Queries :) */
+/********************************************/
+
+/********************************************/
+/* .768px (iPad and more) */
+/********************************************/
+@media (min-width: 768px) {
+	
+}	
+

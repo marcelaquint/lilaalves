@@ -44,6 +44,7 @@
 	<meta property="og:image" content="http://lilaalves.com/img/profile.png"/>
 
 	<!-- Google Analytics -->
+	<!-- Google Analytics -->
 	<script type="text/javascript">
 	
 	  var _gaq = _gaq || [];
@@ -59,25 +60,56 @@
 	</script>
 </head>
 <body>
-	<section class="main">
+	<section class="main feedback">
+	<span class="feedback">Obrigada pelo seu contato! Responderei o mais rápido possível. :)</span>
 		<header class="mainHeader">
 			<h1>Marília Alves</h1>
 			<h2>Jornalista</h2>
 			<nav>
 				<!-- <a>Blog</a> -->
-				<a class="active">Sobre mim</a>
+				<a href="index.html">Sobre mim</a>
 				<a href="portfolio.html">Portfólio</a>
-				<a href="contact.html">Contato</a>
+				<a class="active" href="contact.html">Contato</a>
 			</nav>
 		</header>
 		<div class="wrapper">
-			<section class="content about">
-				<img src="img/lilaalves.jpg" alt="Marília Alves">
-				<h3> - Olá! Eu sou a Marília! :)</h3>
-				<h4>Uma jornalista goiana que fugiu do quadradinho para colocar os pés na areia de Floripa</h4>
-				<p>Me chamo Marília Alves, sou jornalista e tenho 25 anos. Moro em Florianópolis, mas nasci no interior de Goiás e cresci em Brasília, onde vivi até 2013. Escrevo mais do que falo, e, de tanto escrever, encontrei nas palavras a minha profissão.</p>
-				<p>Me formei pelo Centro Universitário Instituto de Educação Superior de Brasília – IESB em 2011. Com quatro estágios, dois empregos e atuação como freelancer, acumulei experiência em assessoria de comunicacão e imprensa, produção e administração de conteúdos online, produção e edição de textos diversos, gerenciamento de produção de artes gráficas e planejamento, desenvolvimento e implantação de estratégias de mídias sociais.</p>
-				<p>Neste site tem um pouco do meu trabalho, espero que goste. Se você quiser falar comigo, é só <a href="contact.html">entrar em contato.</a> E se quiser saber mais, pode <a href="files/cv_marilia_alves.pdf">baixar meu currículo em pdf.</a></p>
+			<section class="content contact">
+				<h4>Vamos conversar? É só preencher o formulário abaixo que sua mensagem chega rapidinho. Se preferir, pode me enviar um email, ligar, ou fazer uma nova amiga no Facebook.</h4>
+				<ul>
+					<li>
+						<i class="fa fa-phone"></i>
+						(48) 9900-4668
+					</li>
+					<li>
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:contato@lilaalves.com">contato@lilaalves.com</a>
+					</li>
+					<li>
+						<i class="fa fa-facebook"></i>
+						<a href="https://www.facebook.com/alves.marilia">http://facebook.com/alves.marilia</a>
+					</li>					
+				</ul>
+				<form action="sendmail.php" method="post">	
+					<div class="field text">
+						<label for="name">Nome</label>
+						<input id="name" class="text placeholder" type="text" placeholder="Como é seu nome?" name="name">
+					</div>
+					<div class="field text">
+						<label for="email">Email</label>
+						<input id="email" class="text placeholder" type="text" placeholder="Qual seu email?" name="email">
+					</div>
+					<div class="field text">
+						<label for="subject">Assunto</label>
+						<input id="subject" class="text placeholder" type="text" placeholder="Sobre o que vamos falar?" name="subject">
+					</div>
+					<div class="field message">
+						<label for="message">Mensagem</label>
+						<textarea id="message" class="placeholder" placeholder="Agora é só escrever sua mensagem." name="message"></textarea>
+					</div>
+					<div class="clearfix button">
+					<input class="submit" type="submit" name="submit" onclick="return validate()" value="enviar mensagem">
+					</div>
+				</form>
 			</section><!-- end of .content -->
 			<footer>
 			<p>Conteúdo por Marília Alves e site por 

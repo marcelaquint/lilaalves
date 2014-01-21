@@ -38,6 +38,10 @@ a:hover {
 /********************************************/
 /* mainHeader */
 /********************************************/
+.feedback .mainHeader {
+	padding-top: 40px;
+}
+
 .mainHeader {
 	position: fixed;
 	top: 0;
@@ -49,7 +53,6 @@ a:hover {
 	min-width: 320px;
 	z-index: 10;
 	text-align: center;
-
 }
 
 h1 {
@@ -108,7 +111,6 @@ h4 {
 /********************************************/
 /* content */
 /********************************************/
-/* about */
 .content {margin-bottom: 60px;}
 
 p {
@@ -117,6 +119,7 @@ p {
 	line-height: 1.4em;
 }
 
+/* about */
 .about img { 
 	width: 140px;
 	height: 140px;
@@ -135,9 +138,21 @@ p {
 /* contact */
 .contact {text-align: center;}
 
-.field {
-	margin-bottom: 15px;
+.contact li {
+	list-style: none;
+	font-size: 1.4em;
+	line-height: 1.4em;
 }
+
+.contact i {
+	font-size: 16px;
+	padding-right: 5px;
+	}
+
+.contact ul {margin-bottom: 15px;}
+
+/* form */
+.field {margin-bottom: 15px;}
 
 label {
 	display: block;
@@ -146,6 +161,10 @@ label {
 	font-size: 1.2em;
 	margin-bottom: 5px;
 	}
+	
+::-webkit-input-placeholder {color:rgba(80,80,80, 1);}
+::-moz-placeholder {color:rgba(80,80,80, 1);}
+:-ms-input-placeholder {color:rgba(80,80,80, 1);}
 
 input.text,
 textarea {
@@ -155,7 +174,9 @@ textarea {
 	width: 100%;
 	border-radius: 2px;
 	background: rgba(252,252,252,1);
-
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.2em;
+	color: rgba(30,30,30, 1);
 }
 
 input.text:hover,
@@ -171,14 +192,6 @@ textarea:focus {
 	box-shadow: 0 1px 1px rgba(20,20,20, 0.2);
 }
 
-input.text.placeholder,
-textarea.placeholder {
-    color: rgba(50,50,50,1);
-    text-transform: uppercase;
- 	font-family: 'Arimo', sans-serif;
-	font-size: 1.2em;
-}
-
 textarea {height: 90px;}
 
 input.submit {
@@ -191,19 +204,87 @@ input.submit {
 	font-size: 1.4em;
 	border-radius: 3px;
 	border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;	
 }
 
 input.submit:hover {
 	box-shadow: 0 1px 0 rgba(60,140,185,1);
-	border: solid 1px rgba(60,140,185,1);
-	padding: 9px;
 }
 
 input.submit:active {
-	border: solid 1px rgba(60,140,185,1);
 	box-shadow: none;
-	margin-top: -1px;
-	padding: 9px;
+	margin-top: 1px;
+	margin-bottom: -1px;
+	box-shadow: 0 -1px 0 rgba(60,140,185,1);	
+}
+
+/* portfolio */
+.portfolio h4 {
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+	
+.portfolio .sample {
+	position:relative;
+	margin: 0 auto 15px;
+	width: 220px;
+}
+
+.portfolio .sample a {
+	background: url("../img/lilaalves.jpg");
+	width: 220px;
+	height: 220px;
+	border-radius: 110px;
+    text-indent: -99999px;
+    overflow: hidden;
+    display: block;
+   	border: solid 1px rgba(255,255,255,0);
+}
+
+.portfolio .sample a:hover {
+	border: solid 1px rgba(255,255,255,1);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.portfolio .social a.internacional {background: url("../img/lilaalves-social-internacional.png") -80px -100px;}
+.portfolio .social a.secti {background: url("../img/lilaalves-social-secti.png") 425px -200px;}
+.portfolio .social a.gabinet {background: url("../img/lilaalves-social-gabinet.png") -290px -990px;}
+.portfolio .assessoriac a.planetario {background: url("../img/lilaalves-assessoria-c-planetario.jpg") -50px 400px;}
+.portfolio .assessoriac a.wcit {background: url("../img/lilaalves-assessoria-c-wcit.jpg") -50px -200px;}
+.portfolio .assessoriai a.planetario {background: url("../img/lilaalves-assessoria-i-planetario.jpg") -200px -100px;}
+.portfolio .text a.flyerNotaLegal {background: url("../img/lilaalves-texto-flyer-notalegal.jpg") -125px -2px;}
+.portfolio .text a.panfletoNotaLegal {background: url("../img/lilaalves-texto-panfleto-notalegal.jpg") -300px -300px;}
+.portfolio .text a.contas {background: url("../img/lilaalves-texto-contas.jpg") 0 0;}
+
+.portfolio .sample span {
+	background: #909090;
+	color: white;
+	padding: 3px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 60px;
+	left: -3px;
+	font-size: 1em;
+}
+
+.portfolio .work {margin-bottom: 45px;}
+.portfolio .work:last-child {margin-bottom: 0;}
+
+/* feedback */
+span.feedback {
+	position: fixed;
+	top: 0;
+	padding: 7px;
+	text-align: center;
+	background-color: rgba(0,190,235,1);
+	color: rgba(255,255,255,1);
+	z-index: 100;
+	font-size: 1.2em;
+	width: 100%;
+	
 }
 
 /* footer */
@@ -211,6 +292,7 @@ footer p {
 	font-size: 1.2em;
 	padding-bottom: 10px;
 	text-align: center;
+	
 }
 
 /********************************************/

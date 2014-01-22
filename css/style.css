@@ -6,7 +6,6 @@ body {
 	font-size: 10px;
 	color: rgba(100,100,100, 1);
 	background: rgba(245, 245, 245, 1);
-	transition: color 0.1s ease-in-out, background 0.3s ease-in-out;
 }
 
 
@@ -28,7 +27,8 @@ a {
 	color: rgba(0,190,235,1);
 	padding: 1px;
 	border-radius: 2px;
-	background: transparent;	
+	background-color: transparent;	
+	transition: all 0.2s ease-in-out;	
 }
 
 a:hover {
@@ -177,19 +177,21 @@ textarea {
 	font-family: 'Arimo', sans-serif;
 	font-size: 1.2em;
 	color: rgba(30,30,30, 1);
+	transition: all 0.3s ease-in-out;	
+	
 }
 
 input.text:hover,
 textarea:hover {
 	background: rgba(255,255,255,1);
-	border: solid 1px rgba(50,50,50, 1);
+	border: solid 1px rgba(20,20,20, 1);
 }
 
 input.text:focus,
 textarea:focus {
 	background: rgba(255,255,255,1);
-	border: solid 1px rgba(20,20,20, 1);
-	box-shadow: 0 1px 1px rgba(20,20,20, 0.2);
+	border: solid 1px rgba(0,0,0, 1);
+	box-shadow: 0 1px 2px rgba(20,20,20, 0.3);
 }
 
 textarea {height: 90px;}
@@ -202,15 +204,14 @@ input.submit {
     color: rgba(255,255,255,1);
 	background: rgba(0,190,235,1);
 	font-size: 1.4em;
-	border-radius: 3px;
 	border: none;
     -webkit-appearance: none;
-    -webkit-border-radius:0; 
-    border-radius:0;	
+    -webkit-border-radius:2px; 
+    border-radius:2px;	
 }
 
 input.submit:hover {
-	box-shadow: 0 1px 0 rgba(60,140,185,1);
+	box-shadow: 0 3px 0 rgba(60,140,185,1);
 }
 
 input.submit:active {
@@ -233,42 +234,50 @@ input.submit:active {
 }
 
 .portfolio .sample a {
-	background: url("../img/lilaalves.jpg");
+	background: rgba(255,255,255,1);
 	width: 220px;
 	height: 220px;
 	border-radius: 110px;
     text-indent: -99999px;
     overflow: hidden;
     display: block;
-   	border: solid 1px rgba(255,255,255,0);
+   	border: solid 3px rgba(255,255,255,0);
 }
 
-.portfolio .sample a:hover {
-	border: solid 1px rgba(255,255,255,1);
-	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+.portfolio .sample:hover a {
+	border: solid 3px rgba(255,255,255,1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
-.portfolio .social a.internacional {background: url("../img/lilaalves-social-internacional.png") -80px -100px;}
+.portfolio .social a.internacional {
+	background: url("../img/lilaalves-social-internacional.png") -80px -100px;
+}
+
 .portfolio .social a.secti {background: url("../img/lilaalves-social-secti.png") 425px -200px;}
 .portfolio .social a.gabinet {background: url("../img/lilaalves-social-gabinet.png") -290px -990px;}
 .portfolio .assessoriac a.planetario {background: url("../img/lilaalves-assessoria-c-planetario.jpg") -50px 400px;}
 .portfolio .assessoriac a.wcit {background: url("../img/lilaalves-assessoria-c-wcit.jpg") -50px -200px;}
 .portfolio .assessoriai a.planetario {background: url("../img/lilaalves-assessoria-i-planetario.jpg") -200px -100px;}
+.portfolio .text a.contas {background: url("../img/lilaalves-texto-contas.jpg") 0 0;}
 .portfolio .text a.flyerNotaLegal {background: url("../img/lilaalves-texto-flyer-notalegal.jpg") -125px -2px;}
 .portfolio .text a.panfletoNotaLegal {background: url("../img/lilaalves-texto-panfleto-notalegal.jpg") -300px -300px;}
-.portfolio .text a.contas {background: url("../img/lilaalves-texto-contas.jpg") 0 0;}
 
 .portfolio .sample span {
 	background: #909090;
 	color: white;
-	padding: 3px;
+	padding: 4px 4px 4px 8px;
 	text-transform: uppercase;
 	border-radius: 3px;
 	position: absolute;
 	bottom: 60px;
 	left: -3px;
-	font-size: 1em;
+	font-size: 0.9em;
 }
+
+.portfolio .sample:hover span {
+	background: rgba(0,190,235,1);
+	transition: all 0.2s ease-in-out;
+	}
 
 .portfolio .work {margin-bottom: 45px;}
 .portfolio .work:last-child {margin-bottom: 0;}

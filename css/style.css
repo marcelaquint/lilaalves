@@ -272,11 +272,11 @@ input.submit:active {
 	bottom: 60px;
 	left: -3px;
 	font-size: 0.9em;
+	transition: background-color 0.1s ease-in-out;	
 }
 
 .portfolio .sample:hover span {
 	background: rgba(0,190,235,1);
-	transition: all 0.2s ease-in-out;
 	}
 
 .portfolio .work {margin-bottom: 45px;}
@@ -293,7 +293,6 @@ span.feedback {
 	z-index: 100;
 	font-size: 1.2em;
 	width: 100%;
-	
 }
 
 /* footer */

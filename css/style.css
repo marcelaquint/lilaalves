@@ -261,6 +261,9 @@ input.submit:active {
 .portfolio .text a.contas {background: url("../img/lilaalves-texto-contas.jpg") 0 0;}
 .portfolio .text a.flyerNotaLegal {background: url("../img/lilaalves-texto-flyer-notalegal.jpg") -125px -2px;}
 .portfolio .text a.panfletoNotaLegal {background: url("../img/lilaalves-texto-panfleto-notalegal.jpg") -300px -300px;}
+.portfolio .multimedia a.coordenadoriaASCOM {background: url("../img/lilaalves-multimedia.png") -215px -45px;}
+.portfolio .sites a.gpax {background: url("../img/lilaalves-sites-gpax.png") -505px -170px;}
+.portfolio .sites a.aconchego {background: url("../img/lilaalves-sites-aconchego.png") -543px -55px;}
 
 .portfolio .sample span {
 	background: #909090;

@@ -196,7 +196,6 @@ textarea:focus {
 	background: rgba(255,255,255,1);
 	border: solid 1px rgba(0,0,0, 1);
 	box-shadow: 0 1px 2px rgba(20,20,20, 0.3);
-	outline: none;
 }
 
 textarea {height: 90px;}
@@ -212,7 +211,7 @@ input.submit {
 	border: none;
     -webkit-appearance: none;
     -webkit-border-radius:2px; 
-    border-radius:2px;	
+    border-radius:2px;
 }
 
 input.submit:hover {
@@ -254,10 +253,9 @@ input.submit:active {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
-.portfolio .social a.internacional {
-	background: url("../img/lilaalves-social-internacional.png") -80px -100px;
-}
-
+.portfolio .social a.innbativel {background: url("../img/lilaalves-social-innbativel.png") -810px -850px;}
+.portfolio .social a.aerochimps {background: url("../img/lilaalves-social-aerochimps.png") -810px -965px;}
+.portfolio .social a.internacional {background: url("../img/lilaalves-social-internacional.png") -80px -100px;}
 .portfolio .social a.secti {background: url("../img/lilaalves-social-secti.png") 425px -200px;}
 .portfolio .social a.gabinet {background: url("../img/lilaalves-social-gabinet.png") -290px -990px;}
 .portfolio .assessoriac a.planetario {background: url("../img/lilaalves-assessoria-c-planetario.jpg") -50px 400px;}
@@ -267,6 +265,7 @@ input.submit:active {
 .portfolio .text a.flyerNotaLegal {background: url("../img/lilaalves-texto-flyer-notalegal.jpg") -125px -2px;}
 .portfolio .text a.panfletoNotaLegal {background: url("../img/lilaalves-texto-panfleto-notalegal.jpg") -300px -300px;}
 .portfolio .multimedia a.coordenadoriaASCOM {background: url("../img/lilaalves-multimedia.png") -215px -45px;}
+.portfolio .sites a.aerochimps {background: url("../img/lilaalves-sites-aerochimps.png") -1095px -990px;}
 .portfolio .sites a.gpax {background: url("../img/lilaalves-sites-gpax.png") -505px -170px;}
 .portfolio .sites a.aconchego {background: url("../img/lilaalves-sites-aconchego.png") -543px -55px;}
 
